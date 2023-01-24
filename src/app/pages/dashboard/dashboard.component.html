@@ -1,0 +1,105 @@
+<div class="container-fluid">
+    <div class="row mt-4 pt-2">
+        <div class="col-6 col-lg-6">
+            <h6 class="fw-bold defaultText mt-3">My Activity</h6>
+        </div>
+        <div class="col-6 col-lg-6">
+            <div class="toRight">
+                <img src='assets/images/user.jpg' class="userIcon" alt="user" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-6 col-lg-6">
+            <div class="myCard">
+                <div class="px-2 py-2">
+                    <div class="row">
+                        <div class="col-4 col-lg-4">
+                            <div class="icon_container">
+                                <i class="fa-solid fa-explosion"></i>
+                            </div>
+                        </div>
+                        <div class="col-8 col-lg-8">
+                            <p class="mb-0 fw-bold">866</p>
+                            <p class="mt-1 mb-0 cardP">Calories burn</p>
+                            <hr class="mt-2 mb-2 hrLine">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-lg-6">
+            <div class="myCard">
+                <div class="px-2 py-2">
+                    <div class="row">
+                        <div class="col-4 col-lg-4">
+                            <div class="icon_container">
+                                <i class="fa-solid fa-shoe-prints"></i>
+                            </div>
+                        </div>
+                        <div class="col-8 col-lg-8">
+                            <p class="mb-0 fw-bold">7579</p>
+                            <p class="mt-1 mb-0 cardP">Steps</p>
+                            <hr class="mt-2 mb-2 hrLine">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-lg-12">
+            <div class="row">
+                <div class="col-6 col-lg-6">
+                    <h6 class="fw-bold defaultText">Goal for week</h6>
+                </div>
+                <div class="col-6 col-lg-6">
+                    <p class="toRight mute_color">42 of 54</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="py-2 px-2 graphBack">
+                <apx-chart [series]="chartBarOptions.series" [dataLabels]="chartBarOptions.dataLabels" [fill]="chartBarOptions.fill" [chart]="chartBarOptions.chart" [xaxis]="chartBarOptions.xaxis" [yaxis]="chartBarOptions.yaxis" [grid]="chartBarOptions.grid" [title]="chartBarOptions.title"></apx-chart>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row mt-5">
+        <div class="col-lg-12">
+            <div class="row">
+                <div class="col-6 col-lg-6">
+                    <h6 class="fw-bold defaultText">Trending Workouts</h6>
+                </div>
+                <div class="col-6 col-lg-6">
+                    <p class="toRight text_underline mute_color">see all</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="myCard">
+                <div class="row px-2 py-3">
+                    <div class="col-6 col-lg-6">
+                        <div class="mt-2">
+                            <i class="fa-solid fa-bicycle" style="padding-left: 8px; color: #7864FD;"></i><span class="workoutP">Muscle Builder</span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-6">
+                        <div class="iconworkout_container" style="margin-right: 10px;">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <app-footer></app-footer>
+
+</div>
