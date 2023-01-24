@@ -42,7 +42,7 @@ export class DashboardComponent implements OnInit {
   barChart(): void{
     this.chartBarOptions = {
       series: [{
-        name: 'Boat',
+        name: 'Goals',
         data: [12, 45, 61, 18, 10, 54, 23]
       }],
         chart: {
